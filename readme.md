@@ -42,30 +42,62 @@ npm run test
 ## Entrada
 
 ##### Parámetro 1
-- **nombre**: num
-- **tipo**: Number (Integer)
-- **limitaciones**: 0 < **num** <= 10
+- **nombre**: cell
+- **tipo**: String
 
 ## Salida
 
 - **tipo**: Number (Integer)
 
 ## Ejemplo
-**1** debe retornar **1** porque: 1 == 1
+Para celda = "A1", la salida debe ser = 2.  
+
+![](https://firebasestorage.googleapis.com/v0/b/fullstack-extraordinary.appspot.com/o/TheCodeChallenge%2FchessKnight-ex1.jpg?alt=media&token=1476ef5d-d316-4ab2-a1f1-0a81acb7de92)
+
+---
+Para celda = "C2", la salida debe ser = 6.  
+
+![](https://firebasestorage.googleapis.com/v0/b/fullstack-extraordinary.appspot.com/o/TheCodeChallenge%2FchessKnight-ex2.jpg?alt=media&token=53085141-d5f4-4b6b-8eae-1ac65617bcef)
 
 ## Tests
 
 ### Test 1  
 
-- **Parametros**: param = 1  
-- **Resultado esperado**: xxx
+- **Parametros**: (cell = "A1")  
+- **Resultado esperado**: 2
 ---
 ### Test 2  
 
-- **Parametros**:  param = 2  
-- **Resultado esperado**: xxx
+- **Parametros**: (cell = "C2")  
+- **Resultado esperado**: 6
 ---
 ### Test 3  
 
-- **Parametros**: param = 3  
-- **Resultado esperado**: xxx
+- **Parametros**: (cell = "B1")  
+- **Resultado esperado**: 3
+---
+### Test 4  
+
+- **Parametros**: (cell = "F1")  
+- **Resultado esperado**: 4
+
+---
+### Test 5    
+
+- **Parametros**: (cell = "H4")  
+- **Resultado esperado**: 4
+---
+### Test 6   
+
+- **Parametros**: (cell = "G7")  
+- **Resultado esperado**: 4
+---
+### Test 7   
+
+- **Parametros**: (cell = "D5")  
+- **Resultado esperado**: 8
+---
+### Test 8 
+
+- **Parametros**: (cell = "E3")  
+- **Resultado esperado**: 8
